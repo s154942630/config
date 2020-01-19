@@ -50,7 +50,7 @@ endfunc
 
 "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
 autocmd Filetype markdown inoremap ,h <Esc>/<(_ _)><Cr>:nohlsearch<Cr>c7l
-autocmd Filetype markdown inoremap ,s <Esc>/ <(_ _)><Cr>:nohlsearch<Cr>c5l<Cr>
+autocmd Filetype markdown inoremap ,o <Esc>/ <(_ _)><Cr>:nohlsearch<Cr>c5l<Cr>
 autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
 autocmd Filetype markdown inoremap ,b **** <(_ _)><Esc>F*hi
 autocmd Filetype markdown inoremap ,s ~~~~ <(_ _)><Esc>F~hi
