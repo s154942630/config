@@ -6,6 +6,7 @@
 ## keyboard
 
 一个以Pro micro为主控的双编码器4X4键盘，使用qmk驱动。
+增加了小鹤音形输入法皮肤，支持长按切换Dvorak配列。
 
 ## sh
 
