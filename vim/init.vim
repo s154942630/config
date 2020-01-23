@@ -15,10 +15,6 @@ nmap <leader>f <Plug>(easymotion-s2)
 nnoremap <leader>w :w<Cr>
 nnoremap <leader>s <Esc>:
 nnoremap ; :
-nnoremap J 5j
-nnoremap K 5k
-nnoremap H 5h
-nnoremap L 5l
 nnoremap <leader>ve :vsplit $MYVIMRC<Cr>
 nnoremap <leader>vs :source $MYVIMRC<Cr>
 
