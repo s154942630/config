@@ -76,7 +76,7 @@ plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.oh-my-zsh/plugins/incr*.zsh
+#source ~/.oh-my-zsh/plugins/incr*.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -113,6 +113,7 @@ source ~/.oh-my-zsh/plugins/incr*.zsh
 
 alias v='nvim'
 alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/picture/Hatsune.Miku.jpg '
+#screenfetch
 alias sudo='sudo -E'
 #alias sra='sudo -E ranger'
 alias feh='feh --random --bg-fill ~/picture/wallpapre/*'
@@ -125,3 +126,7 @@ alias thssh='ssh root@49.234.234.93'
 alias win='cd /run/media/qj'
 alias update='sudo pacman-mirrors -i -c China -m rank'
 alias bgg='cd ~/blog/source/_posts/'
+alias gitpush='git push github master && git push gitee master'
+
+
+alias sus='systemctl suspend'
