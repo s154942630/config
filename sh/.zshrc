@@ -112,12 +112,15 @@ source $ZSH/oh-my-zsh.sh
 
 
 alias v='nvim'
+alias thaoeu='nvim'
+alias l='ls'
+
 alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/picture/Hatsune.Miku.jpg '
 #screenfetch
 alias sudo='sudo -E'
 #alias sra='sudo -E ranger'
-alias feh='feh --random --bg-fill ~/picture/wallpapre/*'
-alias fehling='feh ~/picture/Wall/pw22.jpg'
+alias fehran='feh --random --bg-fill ~/Picture/wallpapre/*'
+alias fehling='feh ~/Picture/Wall/pw22.jpg'
 alias q='exit'
 # alias xx='xmodmap ~/xmodmap/xmodmap'
 alias theme='v ~/document/markdown/theme.md'
