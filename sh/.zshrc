@@ -5,7 +5,7 @@
 export ZSH="/home/qj/.oh-my-zsh"
 # ZSH_THEME="obraun"
 ZSH_THEME="random"
-ZSH_THEME="edvardm"
+# ZSH_THEME="edvardm"
 
 
 
@@ -114,7 +114,10 @@ source $ZSH/oh-my-zsh.sh
 alias v='nvim'
 alias thaoeu='nvim'
 alias l='ls'
-
+# Leader ,
+alias ,w='source ~/.zshrc'
+alias ,i='exit'
+alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
 alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/picture/Hatsune.Miku.jpg '
 #screenfetch
 alias sudo='sudo -E'
