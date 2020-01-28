@@ -117,6 +117,7 @@ alias l='ls'
 # Leader ,
 alias ,w='source ~/.zshrc'
 alias ,i='exit'
+alias ,f=fuck
 alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
 alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/picture/Hatsune.Miku.jpg '
 #screenfetch
@@ -136,3 +137,5 @@ alias gitpush='git push github master && git push gitee master'
 
 
 alias sus='systemctl suspend'
+
+eval $(thefuck --alias)
