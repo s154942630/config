@@ -190,6 +190,7 @@
 set -o vi
 # alias cd=cd_func
 alias v=vim
+alias l=ls
 alias s='source ~/.bashrc'
 #alias bgg='make bggpad:default'
 alias n='cd ~/qmk_firmware'
