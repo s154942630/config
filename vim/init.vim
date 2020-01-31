@@ -23,12 +23,15 @@ noremap <leader>i <Esc>:q<Cr>
 inoremap <leader>w <Esc>:w<Cr>
 inoremap <c-u> <Esc> viwU
 
+"Complie Mod
 map <leader>r :call Complie()<Cr>
 func! Complie()
 	exec "w"
 if &filetype == 'c'
 	exec "!g++ % -o %<"
 	exec "!time ./%<"
+elseif &filetype == 'go'
+	exec "GoRun"
 elseif &filetype == 'java'
 	exec "!javac %"
 	exec "!java %<"
@@ -43,6 +46,13 @@ elseif &filetype == 'markdown'
 endif
 endfunc
 
+"Test Mod
+map <leader>t :call Test()<cr>
+func! Test()
+if &filetype == 'go'
+	exec "GoTest"
+endif
+endfunc
 
 "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
 autocmd Filetype markdown inoremap ,h <Esc>/<(_ _)><Cr>:nohlsearch<Cr>c7l
