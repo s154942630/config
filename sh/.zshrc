@@ -119,7 +119,7 @@ alias ,w='source ~/.zshrc'
 alias ,i='exit'
 alias ,f=fuck
 alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
-alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/picture/Hatsune.Miku.jpg '
+alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/Pictures/Hatsune.Miku.jpg '
 #screenfetch
 alias sudo='sudo -E'
 #alias sra='sudo -E ranger'
