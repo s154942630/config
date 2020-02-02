@@ -354,7 +354,7 @@ preset_keyboards:
     ascii_mode: 0
     author: "flypy.com"
     lock: true
-    ascii_keyboard: qtywjp  #指定密码键盘
+    ascii_keyboard: default  #指定密码键盘
     height: *VJG
     horizontal_gap: *VJL
     vertical_gap: *VJH
@@ -365,68 +365,6 @@ preset_keyboards:
     key_press_offset_y: 3
     key_symbol_offset_x: *DsymX
     label_transform: uppercase #uppercase|none 中文模式下的字母标签自动大写
-    keys:
-      # 第o行 
-      - {height: *yyy, click: "K_default", long_click: "	", key_symbol_color: 0x00, key_text_color: 0xffffffff, key_text_size: 13, key_text_offset_x: 0, key_text_offset_y: 0, hilited_key_back_color: 0x00, key_back_color: yyqq.png, width: 10}
-      - {click: qtywjp, long_click: "　", composing: Page_Up, key_text_color: 0xffaaaaaa, key_text_size: 12, key_text_offset_x: 2, key_text_offset_y: -1, hilited_key_back_color: 0x00, key_back_color: 0x00, width: 10}
-      - {click: qtfhjp, long_click: "", composing: Page_Down, key_text_color: 0xffaaaaaa, key_text_size: 12, key_text_offset_x: 2, key_text_offset_y: -1, hilited_key_back_color: 0x00, key_back_color: byc, width: 10}
-      - {click: BDSS, key_text_color: 0x00, key_back_color: 0x00, hilited_key_back_color: 0x00, width: 50}
-      - {click: "Hide", long_click: , key_text_offset_y: 5, key_text_color: 0x00, key_back_color: 0x00, hilited_key_back_color: 0x00, width: 10}
-      - {click: Hide, long_click: , key_text_size: 19, key_text_offset_x: -8, key_text_offset_y: 9, key_text_color: 0xff666666, key_back_color: AAP, hilited_key_back_color: 0x00, width: 10}
-      # 第一行
-      - {click: q, label: 犭, hint: a, long_click: SXJQQ, swipe_down: Hide, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
-      - {click: w, label: 亠, hint: a, long_click: WeChat, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
-      - {click: e, label: 山, hint: p, long_click: CALCULATOR, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: r, label: 人, hint: y, long_click: TXDT, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: t, label: 田, hint: f, long_click: MT, key_text_color: AAT3, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      - {click: y, label: 衣, hint: g, long_click: XIWB, key_text_color: AAT4, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
-      - {click: u, label: 饣, hint: c, long_click: TGUQ, key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: i, label: 彳, hint: r, long_click: XHIX, key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: o, label: 目, hint: l, long_click: XIWB, key_text_color: AAT6, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      - {click: p, label: 礻, hint: a, long_click: VOLUME_UP, swipe_down: Hide, key_text_color: AAT6, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      # 第二行
-      - {click: a, label:  , hint: a, long_click: select_all, swipe_up: "2017020187", key_text_color: AAP, key_symbol_color: AAS, key_back_color: AAP, width: 2.5, hilited_key_back_color: AAH}
-      - {click: a, label: 鱼, hint: a, long_click: select_all, swipe_up: "2017020187", key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
-      - {click: s, label: 罒, hint: o, long_click: "^", swipe_up: Share, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: d, label: 氵, hint: e, long_click: Date, swipe_up: ChineseDateTime, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: f, label: 标, hint: u, long_click: "&", swipe_up: , key_text_color: 0x66ccff, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      - {click: g, label: 艮, hint: i, long_click: K_use, swipe_up: Hide, key_text_color: AAT3, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
-      - {click: h, label: 虍, hint: d, long_click: "_", key_text_color: AAT4, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: j, label: 杆, hint: h, long_click: "#", key_text_color: 0x66ccff, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: k, label: 㠯, hint: t, long_click: '"', key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      - {click: l, label: 耂, hint: n, long_click: SCIB, key_text_color: AAT6, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      # 第三行
-      - {click: z, composing: Escape, label: 在, swipe_up: ClearH, key_text_color: SHt, width: 8, key_back_color: AAP, width: 10}
-      - {click: z, label: 辶, hint: ;, long_click: "`", key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: x, label: ⺍, hint: q, long_click: cut, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      - {click: c, label: 廾, hint: j, long_click: copy, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
-      - {click: v, label: 豸, hint: k, long_click: paste, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: b, label: 勹, hint: x, long_click: "a", swipe_up: "@", key_text_color: AAT3, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
-      - {click: n, label: 牜, hint: b, long_click: "/", key_text_color: AAT4, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
-      - {click: m, label: 朩, hint: m, long_click: ":", key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH, width: 10}
-      - {click: BackSpace, swipe_up: Candidate_switch, swipe_down: Hint_switch, key_back_color: hsb, hilited_key_back_color: hsh, key_text_color: hst, hilited_key_text_color: hsht, width: 5}
-      # 第四行
-      - {height: *VJM, click: qtszjpk, composing: K_mx, key_symbol_offset_x: 16, long_click: K_menu, swipe_up: "IME_switch", key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: AAH, width: 18} #如想设置为两个方案来回切换，可把此行首的#号删除，后面被替代行首加上#号
-      - {click: ",", composing: "delimiterD", label: " , ", key_text_size: 18, long_click: "!", key_text_offset_x: 0, key_symbol_offset_y: 0, key_symbol_offset_x: 0, width: 15, key_back_color: bdb, key_text_color: bdt, hilited_key_text_color: 0x00ffffff, key_symbol_color: kgs, hilited_key_back_color: AAH}
-      - {click: space, swipe_up: "", key_text_size: 9, key_text_offset_x: 20, long_click: qtywjp, swipe_left: Left, swipe_right: Right, key_back_color: kgb, key_text_offset_y: 2, key_text_color: kgt, hilited_key_text_color: 0x00, hilited_key_symbol_color: 0x00ffffff, key_symbol_color: 0x00ffffff, hilited_key_back_color: AAH, width: 34}
-      - {click: ".", composing: "delimiterD", label: " 。", key_text_size: 19, long_click: ？, key_text_offset_x: 0, key_symbol_offset_y: 0, key_symbol_offset_x: 0, width: 15, key_back_color: bdb, key_text_color: bdt, hilited_key_text_color: 0x00ffffff, key_symbol_color: kgs, hilited_key_back_color: AAH}
-      - {click: Return, key_symbol_offset_x: 20, long_click: Color_switch, swipe_up: Theme_settings, key_back_color: hcb, key_text_color: hct, key_symbol_color: hcs, hilited_key_back_color: AAH, hilited_key_text_color: 0x00, hilited_key_symbol_color: hchs, width: 18}
-    name: "默认26键"
-    width: 10
-
-  qtywjp:
-    author: "青铜"
-    name: "青铜英文" #方便自己辨识的名字
-    ascii_mode: 1 #默认进入英文状态
-    height: *VJG    #键行高度
-    vertical_gap: *VJH  #行间距
-    key_text_offset_y: *DtextY
-    key_symbol_offset_y: *DsymY
-    key_press_offset_x: 0
-    key_press_offset_y: 3
-    key_symbol_offset_x: *DsymX
-    width: 10 #按键默认宽度（取所有按键中用得较多的宽度值，接下来就可以少写一些width了）
-    keys: #按键排列
     keys:
       # 第o行 
       - {height: *yyy, click: "K_default", long_click: "	", key_symbol_color: 0x00, key_text_color: 0xffaaaaaa, key_text_size: 12, key_text_offset_x: 0, key_text_offset_y: 0, hilited_key_back_color: 0x00, key_back_color: 0x00, width: 10}
@@ -475,6 +413,68 @@ preset_keyboards:
       - {click: "&", long_click: "&614@725$", key_text_color: TEX, key_symbol_color: SEX, key_back_color: AAP, hilited_key_back_color: AAH, width: 15}
       - {click: Return, key_symbol_offset_x: 20, long_click: Color_switch, swipe_up: Theme_settings, key_back_color: hcb, key_text_color: hct, key_symbol_color: hcs, hilited_key_back_color: AAH, hilited_key_text_color: 0x00, hilited_key_symbol_color: hchs, width: 18}
 
+
+  qtywjp:
+    author: "青铜"
+    name: "青铜英文" #方便自己辨识的名字
+    ascii_mode: 1 #默认进入英文状态
+    height: *VJG    #键行高度
+    vertical_gap: *VJH  #行间距
+    key_text_offset_y: *DtextY
+    key_symbol_offset_y: *DsymY
+    key_press_offset_x: 0
+    key_press_offset_y: 3
+    key_symbol_offset_x: *DsymX
+    width: 10 #按键默认宽度（取所有按键中用得较多的宽度值，接下来就可以少写一些width了）
+    keys: #按键排列
+    keys:
+      # 第o行 
+      - {height: *yyy, click: "K_default", long_click: "	", key_symbol_color: 0x00, key_text_color: 0xffffffff, key_text_size: 13, key_text_offset_x: 0, key_text_offset_y: 0, hilited_key_back_color: 0x00, key_back_color: yyqq.png, width: 10}
+      - {click: qtywjp, long_click: "　", composing: Page_Up, key_text_color: 0xffaaaaaa, key_text_size: 12, key_text_offset_x: 2, key_text_offset_y: -1, hilited_key_back_color: 0x00, key_back_color: 0x00, width: 10}
+      - {click: qtfhjp, long_click: "", composing: Page_Down, key_text_color: 0xffaaaaaa, key_text_size: 12, key_text_offset_x: 2, key_text_offset_y: -1, hilited_key_back_color: 0x00, key_back_color: byc, width: 10}
+      - {click: BDSS, key_text_color: 0x00, key_back_color: 0x00, hilited_key_back_color: 0x00, width: 50}
+      - {click: "Hide", long_click: , key_text_offset_y: 5, key_text_color: 0x00, key_back_color: 0x00, hilited_key_back_color: 0x00, width: 10}
+      - {click: Hide, long_click: , key_text_size: 19, key_text_offset_x: -8, key_text_offset_y: 9, key_text_color: 0xff666666, key_back_color: AAP, hilited_key_back_color: 0x00, width: 10}
+      # 第一行
+      - {click: q, label: 犭, hint: a, long_click: SXJQQ, swipe_down: Hide, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
+      - {click: w, label: 亠, hint: a, long_click: WeChat, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
+      - {click: e, label: 山, hint: p, long_click: CALCULATOR, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: r, label: 人, hint: y, long_click: TXDT, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: t, label: 田, hint: f, long_click: MT, key_text_color: AAT3, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      - {click: y, label: 衣, hint: g, long_click: XIWB, key_text_color: AAT4, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
+      - {click: u, label: 饣, hint: c, long_click: TGUQ, key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: i, label: 彳, hint: r, long_click: XHIX, key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: o, label: 目, hint: l, long_click: XIWB, key_text_color: AAT6, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      - {click: p, label: 礻, hint: a, long_click: VOLUME_UP, swipe_down: Hide, key_text_color: AAT6, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      # 第二行
+      - {click: a, label:  , hint: a, long_click: select_all, swipe_up: "2017020187", key_text_color: AAP, key_symbol_color: AAS, key_back_color: AAP, width: 2.5, hilited_key_back_color: AAH}
+      - {click: a, label: 鱼, hint: a, long_click: select_all, swipe_up: "2017020187", key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
+      - {click: s, label: 罒, hint: o, long_click: "^", swipe_up: Share, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: d, label: 氵, hint: e, long_click: Date, swipe_up: ChineseDateTime, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: f, label: 标, hint: u, long_click: "&", swipe_up: , key_text_color: 0x66ccff, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      - {click: g, label: 艮, hint: i, long_click: K_use, swipe_up: Hide, key_text_color: AAT3, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
+      - {click: h, label: 虍, hint: d, long_click: "_", key_text_color: AAT4, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: j, label: 杆, hint: h, long_click: "#", key_text_color: 0x66ccff, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: k, label: 㠯, hint: t, long_click: '"', key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      - {click: l, label: 耂, hint: n, long_click: SCIB, key_text_color: AAT6, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      # 第三行
+      - {click: z, composing: Escape, label: 在, swipe_up: ClearH, key_text_color: SHt, width: 8, key_back_color: AAP, width: 10}
+      - {click: z, label: 辶, hint: ;, long_click: "`", key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: x, label: ⺍, hint: q, long_click: cut, key_text_color: AAT1, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      - {click: c, label: 廾, hint: j, long_click: copy, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: AAH}
+      - {click: v, label: 豸, hint: k, long_click: paste, key_text_color: AAT2, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: b, label: 勹, hint: x, long_click: "a", swipe_up: "@", key_text_color: AAT3, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: BBH}
+      - {click: n, label: 牜, hint: b, long_click: "/", key_text_color: AAT4, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH}
+      - {click: m, label: 朩, hint: m, long_click: ":", key_text_color: AAT5, key_symbol_color: AAS, key_back_color: AAP, hilited_key_back_color: CCH, width: 10}
+      - {click: BackSpace, swipe_up: Candidate_switch, swipe_down: Hint_switch, key_back_color: hsb, hilited_key_back_color: hsh, key_text_color: hst, hilited_key_text_color: hsht, width: 5}
+      # 第四行
+      - {height: *VJM, click: qtszjpk, composing: K_mx, key_symbol_offset_x: 16, long_click: K_menu, swipe_up: "IME_switch", key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: AAH, width: 18} #如想设置为两个方案来回切换，可把此行首的#号删除，后面被替代行首加上#号
+      - {click: ",", composing: "delimiterD", label: " , ", key_text_size: 18, long_click: "!", key_text_offset_x: 0, key_symbol_offset_y: 0, key_symbol_offset_x: 0, width: 15, key_back_color: bdb, key_text_color: bdt, hilited_key_text_color: 0x00ffffff, key_symbol_color: kgs, hilited_key_back_color: AAH}
+      - {click: space, swipe_up: "", key_text_size: 9, key_text_offset_x: 20, long_click: qtywjp, swipe_left: Left, swipe_right: Right, key_back_color: kgb, key_text_offset_y: 2, key_text_color: kgt, hilited_key_text_color: 0x00, hilited_key_symbol_color: 0x00ffffff, key_symbol_color: 0x00ffffff, hilited_key_back_color: AAH, width: 34}
+      - {click: ".", composing: "delimiterD", label: " 。", key_text_size: 19, long_click: ？, key_text_offset_x: 0, key_symbol_offset_y: 0, key_symbol_offset_x: 0, width: 15, key_back_color: bdb, key_text_color: bdt, hilited_key_text_color: 0x00ffffff, key_symbol_color: kgs, hilited_key_back_color: AAH}
+      - {click: Return, key_symbol_offset_x: 20, long_click: Color_switch, swipe_up: Theme_settings, key_back_color: hcb, key_text_color: hct, key_symbol_color: hcs, hilited_key_back_color: AAH, hilited_key_text_color: 0x00, hilited_key_symbol_color: hchs, width: 18}
+    name: "默认26键"
+    width: 10
 
   qtszjp:
     author: "青铜"
