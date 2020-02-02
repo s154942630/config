@@ -134,6 +134,7 @@ alias win='cd /run/media/qj'
 alias update='sudo pacman-mirrors -i -c China -m rank'
 alias bgg='cd ~/blog/source/_posts/'
 alias gitpush='git push github master && git push gitee master'
+alias s='git status'
 
 
 alias sus='systemctl suspend'
