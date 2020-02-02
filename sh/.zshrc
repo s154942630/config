@@ -129,10 +129,14 @@ alias q='exit'
 # alias xx='xmodmap ~/xmodmap/xmodmap'
 alias theme='v ~/document/markdown/theme.md'
 alias t='v ~/Code/todo.md'
+
 alias thssh='ssh root@49.234.234.93'
+alias thessh='ssh root@134.175.192.94'
+
 alias win='cd /run/media/qj'
 alias update='sudo pacman-mirrors -i -c China -m rank'
 alias bgg='cd ~/blog/source/_posts/'
+alias p=pwd
 alias gitpush='git push github master && git push gitee master'
 alias s='git status'
 
