@@ -35,4 +35,7 @@ Yang-JUST60配置文件，四层分别对应：
 ### Dwm
 
 - [ ] Go! 
+**Todo** ranger can't use the hotkey.
+
+I try by use the sh, but Failed.
 
