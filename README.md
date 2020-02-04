@@ -1,7 +1,9 @@
-# 我的配置备份
+# 配置备份
+
 ## i3
 
 `~/.config/i3/config` 
+
 
 ## keyboard
 
@@ -35,7 +37,10 @@ Yang-JUST60配置文件，四层分别对应：
 ### Dwm
 
 - [ ] Go! 
-**Todo** ranger can't use the hotkey.
 
-I try by use the sh, but Failed.
+>**Todo** 
+
+ranger can't use the hotkey.
+
+I try by use the st, but Failed.
 

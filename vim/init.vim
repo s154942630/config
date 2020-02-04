@@ -80,25 +80,26 @@ autocmd Filetype go nmap <leader>b <Plug>(go-build)
 
 " MarkDown 
 
-let g:mkdp_Port = '1124'
-let g:mkdp_browser = 'firefox'
+let g:mkdp_browser = 'google-chrome-stable'
 "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
 autocmd Filetype markdown inoremap ,h <Esc>/<(_ _)><Cr>:nohlsearch<Cr>c7l
 autocmd Filetype markdown inoremap ,o <Esc>/ <(_ _)><Cr>:nohlsearch<Cr>c5l<Cr>
 autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
 autocmd Filetype markdown inoremap ,b **** <(_ _)><Esc>F*hi
+autocmd Filetype markdown inoremap ,m **** <(_ _)><Esc>F*hi
+autocmd Filetype markdown inoremap ,i ** <(_ _)><Esc>F*i
+autocmd Filetype markdown inoremap ,a ** <(_ _)><Esc>F*i
 autocmd Filetype markdown inoremap ,s ~~~~ <(_ _)><Esc>F~hi
 autocmd Filetype markdown inoremap ,z <sup></sup><(_ _)><Esc>F/hi
 autocmd Filetype markdown inoremap ,v <sub></sub><(_ _)><Esc>F/hi
-autocmd Filetype markdown inoremap ,t ** <(_ _)><Esc>F*i
 autocmd Filetype markdown inoremap ,d `` <(_ _)><Esc>F`i
-autocmd Filetype markdown inoremap ,c ```<Enter><(_ _)><Enter>```<Enter><Enter><(_ _)><Esc>5kA
-"autocmd Filetype markdown inoremap ,r <Esc>:MarkdownPreview<Cr>
-autocmd Filetype markdown inoremap ,m - [ ] <Enter><(_ _)><ESC>kA
+autocmd Filetype markdown inoremap ,r <Esc>:MarkdownPreview<Cr>
+autocmd Filetype markdown inoremap ,e - [ ] <Enter><(_ _)><ESC>kA
 autocmd Filetype markdown inoremap ,p ![](<(_ _)>) <(_ _)><Esc>F[a
-autocmd Filetype markdown inoremap ,a [](<(_ _)>) <(_ _)><Esc>F[a
+autocmd Filetype markdown inoremap ,u [](<(_ _)>) <(_ _)><Esc>F[a
+autocmd Filetype markdown inoremap ,l --------<Enter>
+autocmd Filetype markdown inoremap ,c ```<Enter><(_ _)><Enter>```<Enter><Enter><(_ _)><Esc>5kA
 autocmd Filetype markdown inoremap ,0 #<Space><Enter><(_ _)><Esc>kA
 autocmd Filetype markdown inoremap ,9 ##<Space><Enter><(_ _)><Esc>kA
 autocmd Filetype markdown inoremap ,8 ###<Space><Enter><(_ _)><Esc>kA
 autocmd Filetype markdown inoremap ,7 ####<Space><Enter><(_ _)><Esc>kA
-autocmd Filetype markdown inoremap ,l --------<Enter>
