@@ -13,7 +13,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 
-nmap <leader>f <Plug>(easymotion-s2)
+nmap <leader>h <Plug>(easymotion-s2)
 
 
 nnoremap <leader>w :w<Cr>
