@@ -88,7 +88,7 @@ static const char *ranger[] = { "/home/qj/Script/ranger.sh", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,	      	        XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_space,  spawn,	   {.v = krunner } },
+	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 
 	{ 0,	                   	XK_F2,	   spawn,          {.v = downvol } },
@@ -103,7 +103,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_u,      fullscreen,     {0} },
 	{ MODKEY|ShiftMask,	        XK_u,      setlayout,      {.v = &layouts[0]} },
 //	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_d,	   spawn,	   {.v = krunner } },
 	{ MODKEY|ShiftMask,             XK_d,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_h,      focusstack,     {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_h,	   zoom,           {0} },
