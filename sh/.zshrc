@@ -98,49 +98,33 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-
-#This speeds up pasting w/ autosuggest 
-#htts://github.com/zsh-users/zsh-
 
 
-
-
-
-alias v='nvim'
-alias thaoeu='nvim'
-alias l='ls'
 # Leader ,
+alias ,=cd
 alias ,w='source ~/.zshrc'
 alias ,i='exit'
 alias ,f=fuck
-alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
-alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/Pictures/Hatsune.Miku.jpg '
-#screenfetch
-alias sudo='sudo -E'
-#alias sra='sudo -E ranger'
-alias fehran='feh --random --bg-fill ~/Picture/wallpapre/*'
-alias fehling='feh ~/Picture/Wall/pw22.jpg'
+alias v='nvim'
+alias p=pwd
+alias l='ls'
+alias t='v ~/Code/todo.md'
 alias q='exit'
 # alias xx='xmodmap ~/xmodmap/xmodmap'
-alias theme='v ~/document/markdown/theme.md'
-alias t='v ~/Code/todo.md'
+#alias theme='v ~/document/markdown/theme.md'
 
+# SSH & SCP & GIT
 alias thssh='ssh root@49.234.234.93'
 alias thessh='ssh root@134.175.192.94'
-
-alias win='cd /run/media/qj'
-alias update='sudo pacman-mirrors -i -c China -m rank'
-alias bgg='cd ~/blog/source/_posts/'
-alias p=pwd
-alias gitpush='git push github master && git push gitee master'
 alias s='git status'
+alias gitpush='git push github master && git push gitee master'
 
-
+# FileName
+alias win='cd /run/media/qj'
+alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
+alias update='sudo pacman-mirrors -i -c China -m rank'
 alias sus='systemctl suspend'
 
+#screenfetch
+alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/Pictures/Hatsune.Miku.jpg '
 eval $(thefuck --alias)
