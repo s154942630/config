@@ -3,8 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/qj/.oh-my-zsh"
-# ZSH_THEME="obraun"
 ZSH_THEME="random"
+# ZSH_THEME="obraun"
 # ZSH_THEME="edvardm"
 
 

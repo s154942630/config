@@ -1,7 +1,7 @@
 let mapleader = ","
 set nu
 set autoindent
-"set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-startify'

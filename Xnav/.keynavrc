@@ -1,7 +1,6 @@
-# This is a keynavrc file. Yours should live in 
 # $HOME/.keynavrc
-
 # ctrl+semicolon start
+
 ctrl+space start
 Escape end
 h cut-left
@@ -21,6 +20,9 @@ shift+o move-down
 shift+e move-up
 shift+u move-right
 
+### History
+y history-back
+
 space warp,click 1,end
 semicolon warp,click 2,end
 i warp,click 3,end
@@ -30,25 +32,26 @@ p warp,click 4,end
 3 click 3
 4 click 4
 
+# Record keynav actions
+q record
+shift+at playback
+
 # Zoom to the current window
 w windowzoom
 
 # Zoom to the cursor location with a given height and width
-c cursorzoom 200 200
+Tab cursorzoom 200 200
 
 # Handy for holding ctrl while using keynav:
-ctrl+a cut-left
-ctrl+o cut-down
-ctrl+e cut-up
-ctrl+u cut-right
-ctrl+h cut-left
-ctrl+j cut-down
-ctrl+k cut-up
-ctrl+l cut-right
+# ctrl+a cut-left
+# ctrl+o cut-down
+# ctrl+e cut-up
+# ctrl+u cut-right
+# ctrl+h cut-left
+# ctrl+j cut-down
+# ctrl+k cut-up
+# ctrl+l cut-right
 
-# Record keynav actions
-q record
-shift+at playback
 
 ### Example using the 'sh' command.
 # Make firefox the active window
@@ -69,8 +72,6 @@ shift+at playback
 #shift+q drag 1 shift
 #shift+ctrl+q drag 1 shift+ctrl
 
-### History
-y history-back
 
 ### Example of cut and move without the default values
 #h cut-left .75
