@@ -1,9 +1,6 @@
-# 配置备份
-
-## i3
+#### I3
 
 `~/.config/i3/config` 
-
 
 ## keyboard
 
@@ -22,8 +19,6 @@ zsh&bash配置备份
 
 `~/.config/nvim/init.vim` 
 
-neovim配置文件
-
 ## JUST60.bin
 
 Yang-JUST60配置文件，四层分别对应：
@@ -33,8 +28,7 @@ Yang-JUST60配置文件，四层分别对应：
 - [ ] 鼠标控制层
 - [ ] Dvorak硬改层
 
-
-### Dwm
+## Dwm
 
 - [ ] Go! 
 
@@ -44,7 +38,7 @@ ranger can't use the hotkey.
 
 I try by use the st, but Failed.
 
-### Mnav
+## Mnav
 
 **keynavrc** 
 
@@ -52,10 +46,9 @@ I try by use the st, but Failed.
 
 *depend on X11* 
 
-Ctrl+Space start
-Space - [ ] click
-
-;	- [ ] Middle-click
-p	- [ ] 
-i	- [ ] 
+- [ ] *Ctrl+Space* start
+- [ ] *Space* 	click	
+- [ ] *;* Middle-click
+- [ ] *i* Right-click
+- [ ] *y* backhistory
 
