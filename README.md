@@ -44,3 +44,18 @@ ranger can't use the hotkey.
 
 I try by use the st, but Failed.
 
+### Mnav
+
+**keynavrc** 
+
+`~/.keynavrc` 
+
+*depend on X11* 
+
+Ctrl+Space start
+Space - [ ] click
+
+;	- [ ] Middle-click
+p	- [ ] 
+i	- [ ] 
+
