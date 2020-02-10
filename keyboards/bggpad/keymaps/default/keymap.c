@@ -69,9 +69,9 @@ void oled_task_user(void) { render_logo(); }
 void encoder_update_user(uint8_t index, bool clockwise) {
   if (index == 0) {
     if (clockwise) {
-      tap_code(KC_VOLU);
+      tap_code(KC_F8);
     } else {
-      tap_code(KC_VOLD);
+      tap_code(KC_F9);
     }
   } else if (index == 1) {
     if (clockwise) {
