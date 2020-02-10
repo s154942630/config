@@ -1,25 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
 export ZSH="/home/qj/.oh-my-zsh"
 ZSH_THEME="random"
-# ZSH_THEME="obraun"
+plugins=(git vi-mode)
 # ZSH_THEME="edvardm"
+# ZSH_THEME="obraun"
 
-
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
+source $ZSH/oh-my-zsh.sh
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -72,9 +60,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
 
-source $ZSH/oh-my-zsh.sh
 
 #source ~/.oh-my-zsh/plugins/incr*.zsh
 # User configuration
@@ -101,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Leader ,
-alias ,=cd
+alias ,='cd '
 alias ,w='source ~/.zshrc'
 alias ,i='exit'
 alias ,f=fuck
@@ -116,6 +102,7 @@ alias q='exit'
 # SSH & SCP & GIT
 alias thssh='ssh root@49.234.234.93'
 alias thessh='ssh root@134.175.192.94'
+alias tha='ssh root@47.95.196.82'
 alias s='git status'
 alias gitpush='git push github master && git push gitee master'
 
@@ -124,6 +111,9 @@ alias win='cd /run/media/qj'
 alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
 alias update='sudo pacman-mirrors -i -c China -m rank'
 alias sus='systemctl suspend'
+
+# Qmk
+alias ,mk='avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 -U flash:w:bggpad_default.hex'
 
 #screenfetch
 alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/Pictures/Hatsune.Miku.jpg '
