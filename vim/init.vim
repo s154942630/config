@@ -1,32 +1,37 @@
-let mapleader = ","
 set nu
+let mapleader = ","
 set autoindent
-" set clipboard=unnamedplus
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+let g:python3_host_porg = '/usr/bin/python3'
+let g:python_host_porg = '/usr/bin/python'
+let g:loaded_python_provider = 0
+let g:lodaed_python3_provider = 0
+"set clipboard=unnamedplus
 
 call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-startify'
 Plug 'easymotion/vim-easymotion'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-Plug 'junegunn/vim-peekaboo'
+Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
+"Plug 'junegunn/vim-peekaboo'
+
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
-
 nmap <leader>h <Plug>(easymotion-s2)
-
-
+nnoremap <leader>i <Esc>:q<Cr>
 nnoremap <leader>w :w<Cr>
 nnoremap <leader>s <Esc>:
-nnoremap ; :
 nnoremap <leader>ve :vsplit $MYVIMRC<Cr>
 nnoremap <leader>vs :source $MYVIMRC<Cr>
-
-noremap <leader>i <Esc>:q<Cr>
+nnoremap ; :
 
 inoremap <leader>w <Esc>:w<Cr>
 inoremap <c-u> <Esc> viwU
-
 
 " xclip
 
@@ -39,7 +44,6 @@ endfunction
 
 nnoremap <leader>Y "+yy
 nnoremap <leader>p "+p
-
 noremap <leader>y "+y
 noremap <leader>p "+p
 
@@ -75,12 +79,13 @@ if &filetype == 'go'
 	exec "GoTest"
 endif
 endfunc
+
 " Vim-Go
 autocmd Filetype go nmap <leader>b <Plug>(go-build)
 
 " MarkDown 
 
-let g:mkdp_browser = 'google-chrome-stable'
+let g:mkdp_browser = 'chromium'
 "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
 autocmd Filetype markdown inoremap ,h <Esc>/<(_ _)><Cr>:nohlsearch<Cr>c7l
 autocmd Filetype markdown inoremap ,o <Esc>/ <(_ _)><Cr>:nohlsearch<Cr>c5l<Cr>
