@@ -1,16 +1,25 @@
-set nu
+set number
+set relativenumber
+set encoding=utf-8
+set scrolloff=4		"Keep the distance between the up and low
+" set cursorline
 let mapleader = ","
-set autoindent
-set softtabstop=4
+set softtabstop=4	" inentation
 set tabstop=4
 set shiftwidth=4
+set wrap
+set wildmenu
+set autoindent
 let g:python3_host_porg = '/usr/bin/python3'
-let g:python_host_porg = '/usr/bin/python'
+let g:python2_host_porg = '/usr/bin/python2.7'
 let g:loaded_python_provider = 0
 let g:lodaed_python3_provider = 0
 "set clipboard=unnamedplus
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif	" Restore last position
 
 call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-startify'
 Plug 'easymotion/vim-easymotion'
 "Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
@@ -20,12 +29,14 @@ Plug 'SirVer/ultisnips'
 "Plug 'junegunn/vim-peekaboo'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 
 nmap <leader>h <Plug>(easymotion-s2)
+nmap <leader>gy :Goyo<Cr>
 nnoremap <leader>i <Esc>:q<Cr>
 nnoremap <leader>w :w<Cr>
-nnoremap <leader>s <Esc>:
+nnoremap <leader>s :set spell!<Cr>
 nnoremap <leader>ve :vsplit $MYVIMRC<Cr>
 nnoremap <leader>vs :source $MYVIMRC<Cr>
 nnoremap ; :
@@ -42,8 +53,6 @@ function! ClipboardPaste()
 	let @@ = system('xclip -o -selectinon clipboard')
 endfunction
 
-nnoremap <leader>Y "+yy
-nnoremap <leader>p "+p
 noremap <leader>y "+y
 noremap <leader>p "+p
 
@@ -86,6 +95,7 @@ autocmd Filetype go nmap <leader>b <Plug>(go-build)
 " MarkDown 
 
 let g:mkdp_browser = 'chromium'
+
 "autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
 autocmd Filetype markdown inoremap ,h <Esc>/<(_ _)><Cr>:nohlsearch<Cr>c7l
 autocmd Filetype markdown inoremap ,o <Esc>/ <(_ _)><Cr>:nohlsearch<Cr>c5l<Cr>
