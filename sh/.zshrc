@@ -4,6 +4,7 @@
 export ZSH="/home/qj/.oh-my-zsh"
 ZSH_THEME="random"
 plugins=(git vi-mode)
+# plugins=(git battery)
 # ZSH_THEME="edvardm"
 # ZSH_THEME="obraun"
 
@@ -111,9 +112,13 @@ alias win='cd /run/media/qj'
 alias ztg='cp ~/.zshrc ~/Overt/config/sh && cd ~/Overt/config/sh'
 alias update='sudo pacman-mirrors -i -c China -m rank'
 alias sus='systemctl suspend'
+alias hn='cd ~/Overt/blog && hugo new'
+alias hu='cd ~/Overt/blog/content/post'
 
 # Qmk
 alias ,mk='avrdude -p atmega32u4 -P /dev/ttyACM0 -c avr109 -U flash:w:bggpad_default.hex'
+alias bgg='cd ~/Templates/qmk_firmware/keyboards/bggpad/keymap/s/default'
+alias qmk='cd ~/Templates/qmk_firmware && make bggpad:default'
 
 #screenfetch
 alias neo='neofetch \--block_range 1 8 \--line_wrap off \--bold off \--uptime_shorthand on \--gtk_shorthand on \--colors 4 1 8 8 8 7 \--w3m /home/qj/Pictures/Hatsune.Miku.jpg '
